@@ -1,0 +1,14 @@
+{
+  "name": "resume_website",
+  "version": "1.0.0",
+  "description": "A resume website project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "author": "Andrew",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
