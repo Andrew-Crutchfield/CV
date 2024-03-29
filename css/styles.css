@@ -117,17 +117,19 @@ h1, .h1 {
     font-size: 2.5rem;
   }
 }
-/* insert after robust */
+/* Insert after robust */
 /* Add custom styles for text on white background */
 .education-item p {
   color: #000; /* Set text color to black */
 }
+
 .circle-container {
   position: absolute;
   top: 0;
   left: 0;
-  width: 200px; /* Adjust size as needed */
-  height: 200px; /* Adjust size as needed */
+  width: 40%; /* Set width to 40% of viewport width */
+  max-width: 150px; /* Set maximum width */
+  height: auto; /* Ensure height adjusts according to width */
   border-radius: 50%; /* Make it circular */
   overflow: hidden; /* Hide overflow */
   z-index: 1; /* Ensure it's above other content */
@@ -141,13 +143,15 @@ h1, .h1 {
 .text-white {
   color: white; /* Set text color to white */
 }
+
 .bigger-title {
-  font-size: 5.5rem !important; /* Adjust the size as needed */
+  font-size: 3.5rem !important; /* Adjust the size as needed for mobile */
 }
 
 .bigger-description {
-  font-size: 3rem !important; /* Adjust the size as needed */
+  font-size: 2rem !important; /* Adjust the size as needed for mobile */
 }
+
 .text-container {
   background-color: #444; /* Darker grey background color */
   border-radius: 15px; /* Rounded corners */
@@ -156,6 +160,48 @@ h1, .h1 {
   margin: 0 auto; /* Center the container horizontally */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
 }
+.btn {
+  width: 200px; /* Set a fixed width for the buttons */
+}
+
+@media only screen and (max-width: 768px) {
+  /* Adjust spacing for smartphones */
+  .circle-container {
+    width: 50%; /* Adjust width for smaller screens */
+    max-width: 120px; /* Adjust maximum width for smaller screens */
+  }
+  .content-section {
+      padding: 20px; /* Example: Increase padding for content sections */
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow buttons to wrap if necessary */
+  }
+
+  .btn {
+    width: 200px; /* Set width to 50% minus margin */
+    margin: 2.5px; /* Add margin to separate buttons */
+    font-size: 1.5rem; /* Adjust button font size for mobile */
+    padding: 15px 30px; /* Adjust button padding for mobile */
+  }
+
+  #look-at-me-btn {
+    margin-right: 5px; /* Add margin only to the right of the "Look at Me!" button */
+  }
+
+  #click-me-btn {
+    margin-left: 20px; /* Add margin only to the left of the "Click Me!" button */
+  }
+
+  .btn-xl {
+      padding: 15px 30px; /* Adjust button padding for mobile */
+  }
+
+  /* Add more styles to adjust spacing as needed */
+}
+
 
 
 
