@@ -122,6 +122,41 @@ h1, .h1 {
 .education-item p {
   color: #000; /* Set text color to black */
 }
+.circle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px; /* Adjust size as needed */
+  height: 200px; /* Adjust size as needed */
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden; /* Hide overflow */
+  z-index: 1; /* Ensure it's above other content */
+}
+
+.circle-image {
+  width: 100%; /* Ensure the image fills the circular container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.text-white {
+  color: white; /* Set text color to white */
+}
+.bigger-title {
+  font-size: 5.5rem !important; /* Adjust the size as needed */
+}
+
+.bigger-description {
+  font-size: 3rem !important; /* Adjust the size as needed */
+}
+.text-container {
+  background-color: #444; /* Darker grey background color */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px; /* Add padding for space around the text */
+  max-width: 800px; /* Adjust max-width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+}
+
 
 
 h2, .h2 {
