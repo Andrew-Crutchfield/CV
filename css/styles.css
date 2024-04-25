@@ -201,6 +201,24 @@ h1, .h1 {
 
   /* Add more styles to adjust spacing as needed */
 }
+.login-container {
+  display: inline-block;
+  position: relative;
+}
+
+.login-info {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+}
+
+.login-container:hover .login-info {
+  display: block;
+}
 
 
 
