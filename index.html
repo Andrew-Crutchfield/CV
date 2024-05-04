@@ -26,16 +26,18 @@
             <!-- <li class="sidebar-nav-item"><a href="#contact">Contact</a></li> -->
         </ul>
     </nav>
-    <header class="masthead d-flex align-items-center position-relative" style="background-image: url('assets/img/12e53d00-7f3c-11ea-9f09-5e0058bed5af.jpeg');">
+    <header class="masthead d-flex align-items-center position-relative" id="masthead" style="background-image: url('assets/img/hero.jpg');">
         <!-- Circular container -->
-        <div class="circle-container">
-            <img src="assets/img/20240327-7-Edit.jpg" alt="Background Image" class="circle-image">
-        </div>
         <div class="container px-4 px-lg-5 text-center">
             <!-- Added a container for text with darker grey rounded background -->
             <div class="text-container rounded bg-dark p-4">
-                <h1 class="mb-1 title-text text-white bigger-title">Welcome to My Portfolio</h1>
-                <h3 class="mb-5 text-white bigger-description"><em>Explore a curated showcase of my work and projects. From web development to design, dive into a collection that reflects my passion for creativity and innovation.</em></h3>
+                <div class="circle-container">
+                    <img src="assets/img/20240327-7-Edit.jpg" alt="Portrait of Andrew Crutchfield" class="circle-image">
+                </div>
+                <div>
+                    <h1 class="mb-1 title-text text-white bigger-title">Hello, I'm Andrew Crutchfield.</h1>
+                    <h3 class="mb-5 text-white" style="padding-top: 1.5em;">I am a full-stack web developer eager to grow as a professional software engineer as a part of a high-functioning team. Scroll down for my current projects and interests. <a href="mailto:ajcrutch117@gmail.com?subject=Hire You">Reach out</a> if you'd like to hire me!</h3>
+                </div>
             </div>
             <!-- <a class="btn btn-primary btn-xl" href="#about">Find Out More</a> -->
         </div>
@@ -45,8 +47,8 @@
         <div class="container px-4 px-lg-5 text-center">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-10">
-                    <h2>Explore My Projects</h2>
-                    <p class="lead mb-5">Discover a range of diverse projects I've worked on, each showcasing a unique blend of creativity and functionality. From web applications to design projects, delve into my portfolio to see firsthand the results of my dedication and expertise.</p>
+                    <h2>My Projects</h2>
+                    <p class="lead mb-5">I am committed to constant learning and growing, and I love to code. Here are some projects I'm working on right now.</p>
                     <a class="btn btn-dark btn-xl" href="https://inkwellpages.com/" target="_blank">Inkwell Pages</a>
                     <a class="btn btn-dark btn-xl" href="ghibliapi.lol/" target="_blank">Ghibli Api</a>
                     <a class="btn btn-dark btn-xl" href="https://andrew-crutchfield.github.io/JustMyType/" target="_blank">JustMyType</a>
@@ -55,35 +57,57 @@
                 </div>
             </div>
         </div>
-    </section>    
-    
+    </section>
     
     <section class="content-section bg-primary text-white text-center" id="services">
         <div class="container px-4 px-lg-5">
             <div class="content-section-heading">
                 <!-- <h3 class="text-secondary mb-0">Languages Used</h3> -->
-                <h2 class="mb-5">Proficient Languages</h2>
+                <h2 class="mb-5">My Tech Stack</h2>
             </div>
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                    <img src="assets/img/download.png" alt="Python Logo" class="service-icon rounded-circle mx-auto mb-3">
-                    <h4><strong>Python</strong></h4>
-                    <p class="text-faded mb-0">Proficient in Python. Experienced in backend development, data analysis, and scripting using Python.</p>
+                    <img src="assets/img/python-logo.jpg" alt="Python Logo" class="service-icon rounded-circle mx-auto mb-3">
+                    <h4>Python</h4>
+                    <p class="text-faded mb-0">Scripting and data integration with Python.</p>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                    <img src="assets/img/sqllogo.png" alt="SQL Logo" class="service-icon rounded-circle mx-auto mb-3">
-                    <h4><strong>SQL</strong></h4>
-                    <p class="text-faded mb-0">Proficient in SQL. Experienced in database management and querying using SQL in various database systems.</p>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                    <img src="assets/img/kisspng-c-programming-language-logo-microsoft-visual-stud-atlas-portfolio-5b8991925c19f7.9738748215357423543773.jpg" alt="C# Logo" class="service-icon rounded-circle mx-auto mb-3">
-                    <h4><strong>C#</strong></h4>
-                    <p class="text-faded mb-0">Proficient in C#. Experienced in developing desktop and web applications using .NET framework and ASP.NET.</p>
+                    <img src="assets/img/sqllogo.jpg" alt="SQL Logo" class="service-icon rounded-circle mx-auto mb-3">
+                    <h4>SQL</h4>
+                    <p class="text-faded mb-0">Describe, define, write, update, and query data in relational databases.</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <img src="assets/img/javascript-logo-javascript-icon-transparent-free-png.webp" alt="JavaScript Logo" class="service-icon rounded-circle mx-auto mb-3">
-                    <h4><strong>JavaScript</strong></h4>
-                    <p class="text-faded mb-0">High proficiency in JavaScript. Experienced in frontend development using modern JavaScript frameworks like React.js and Angular.js.</p>
+                    <img src="assets/img/javascript-logo.jpg" alt="JavaScript Logo" class="service-icon rounded-circle mx-auto mb-3">
+                    <h4>JavaScript</h4>
+                    <p class="text-faded mb-0">Full-stack web development using modern JavaScript frameworks on the client and server.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                    <img src="assets/img/typescript-logo.jpg" alt="TypeScript Logo" class="service-icon rounded-circle mx-auto mb-3">
+                    <h4>TypeScript</h4>
+                    <p class="text-faded mb-0">My go-to for full-stack development. It hurts us only because it cares.</p>
+                </div>
+            </div>
+
+            <div class="row gx-4 gx-lg-5 justify-content-center" style="padding-top:2em;">
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <img src="assets/img/react-logo.png" alt="React.js Logo" class="service-icon rounded-circle mx-auto mb-3">
+                    <h4>React.js</h4>
+                    <p class="text-faded mb-0">The standard component-based framework for the front end.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <img src="assets/img/expressjs-logo.jpg" alt="Express.js Logo" class="service-icon rounded-circle mx-auto mb-3">
+                    <h4>Express.js</h4>
+                    <p class="text-faded mb-0">Making Node.js just slightly easier to use.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                    <img src="assets/img/mysql-logo.jpg" alt="C# Logo" class="service-icon rounded-circle mx-auto mb-3">
+                    <h4>MySQL</h4>
+                    <p class="text-faded mb-0">An excellent open-source relational database.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <img src="assets/img/postgresql-logo.jpg" alt="PostgreSQL Logo" class="service-icon rounded-circle mx-auto mb-3">
+                    <h4>PostgreSQL</h4>
+                    <p class="text-faded mb-0">Postgres is the new black.</p>
                 </div>
             </div>
         </div>
@@ -91,8 +115,8 @@
     
     <section id="more-websites" class="callout custom-bg">
         <div class="container px-4 px-lg-5 text-center">
-            <h2 class="mx-auto mb-5">More Websites are on the Way!</h2>
-            <h3 class="mx-auto mb-5">Come back to see what amazing works I create for the future</h3>
+            <h2 class="mx-auto mb-5">More projects are on the way!</h2>
+            <h3 class="mx-auto mb-5">I'm always working on something, so check back to see what's current.</h3>
             <!-- <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a> -->
         </div>
     </section>
@@ -100,19 +124,18 @@
     <section id="education" class="content-section" id="education">
         <div class="container px-4 px-lg-5">
             <div class="content-section-heading text-center">
-                <h3 class="text-secondary mb-0">Education</h3>
                 <h2 class="mb-5">Academic Journey</h2>
             </div>
             <div class="row gx-0">
                 <div class="col-lg-6">
                     <div class="education-item">
-                        <h4><strong> Certification from Covalence Fullstack boot camp</strong></h4>
+                        <h4>Certification from Covalence Fullstack Boot Camp</h4>
                         <p class="text-faded mb-0">Graduating from the fullstack webdev JavaScript bootcamp was transformative, equipping me with a comprehensive skill set to craft dynamic, user-centric web applications.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="education-item">
-                        <h4><strong>Columbia International University</strong></h4>
+                        <h4>Columbia International University</h4>
                         <p class="text-faded mb-0">Enrolled in Columbia International University, pursuing a double major in Psychology and Bible studies.</p>
                     </div>
                 </div>
@@ -120,7 +143,7 @@
         </div>
     </section>
     
-    <section id="testimonial" class="testimonial pb-5"> <!-- Added pb-5 class for bottom padding -->
+    <!-- <section id="testimonial" class="testimonial pb-5">
         <div class="container px-4 px-lg-5">
             <div class="testimonial-heading text-center">
                 <h3 class="text-secondary mb-0">Testimonial</h3>
@@ -134,7 +157,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     
     <section id="having-fun" class="content-section bg-primary text-white">
         <div class="container px-4 px-lg-5 text-center">
